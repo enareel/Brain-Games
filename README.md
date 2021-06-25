@@ -6,4 +6,4 @@
 
 ### ASCIINEMA
 
-[Asciinema](https://asciinema.org/a/5Z4y9z4CMpLDYKaNWutPxABhw)
+[Asciinema](https://asciinema.org/a/o5j0wp7Tj1nrTP66UFFWXjhea)
