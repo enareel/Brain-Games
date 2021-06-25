@@ -26,8 +26,9 @@ const answerMap = {
  * @param {*} value
  * @returns {String}
  */
-const getKeyByValue = (obj, value) =>
+const getKeyByValue = (obj, value) => {
   Object.keys(obj).find((key) => obj[key] === value);
+};
 
 /**
  * Функция проверки числа на четность
@@ -75,4 +76,6 @@ const startGame = (name) => {
 console.log(`${Message.GREETINGS}`);
 const userName = cli();
 console.log(`${Message.RULE}`);
+
+// Старт игры
 startGame(userName);
