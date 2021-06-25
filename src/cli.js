@@ -1,5 +1,18 @@
-/* Модуль, запрашивающий
-имя пользователя и осуществляющий вывод оного */
+/**
+ * Модуль, который получает имя пользователя
+ * и приветствует его
+ */
 import readlineSync from 'readline-sync';
 
-export default () => readlineSync.question('May I have your name? ');
+/**
+ * Функция, которая спрашивает у пользователя имя,
+ * приветствует его и возвращает оное
+ * @returns {String}
+ */
+const sayHello = () => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  return name;
+};
+
+export default sayHello;
