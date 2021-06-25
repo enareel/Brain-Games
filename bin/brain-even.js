@@ -26,9 +26,7 @@ const answerMap = {
  * @param {*} value
  * @returns {String}
  */
-const getKeyByValue = (obj, value) => {
-  Object.keys(obj).find((key) => obj[key] === value);
-};
+const getKeyByValue = (obj, value) => Object.keys(obj).find((key) => obj[key] === value);
 
 /**
  * Функция проверки числа на четность
