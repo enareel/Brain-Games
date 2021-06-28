@@ -9,15 +9,20 @@ const greetingsMsg = 'Welcome to the Brain Games!';
 const times = 3;
 
 /**
- * Функция осуществления игры
- * @param {String} ruleMsg
- * @param {Function} gameFunc
- * @returns {Number}
+ * Функция-коллбэк игры
+ * @callback gameCallback
  */
-const engine = (ruleMsg, gameFunc) => {
+
+/**
+ * Функция осуществления игры
+ * @param {gameCallback} gameFunc
+ * @returns {number}
+ */
+const engine = (gameFunc) => {
   // Приветствуем пользователя и описываем правила игры
   console.log(`${greetingsMsg}`);
   const userName = cli();
+  const { rule: ruleMsg } = gameFunc();
   console.log(`${ruleMsg}`);
 
   // Финальное сообщение

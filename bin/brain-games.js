@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 /**
- * Основная программа (скрипт)
+ * Программа (скрипт) основной игры
  */
-import cli from '../src/cli.js';
+import brainGame from '../games/brain-games-src.js';
 
-// Приветствуем пользователя
-console.log('Welcome to the Brain Games!');
-cli();
+// Старт игры
+brainGame();

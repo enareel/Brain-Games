@@ -7,7 +7,7 @@ import readlineSync from 'readline-sync';
 /**
  * Функция, которая спрашивает у пользователя имя,
  * приветствует его и возвращает оное
- * @returns {String}
+ * @returns {string}
  */
 const sayHello = () => {
   const name = readlineSync.question('May I have your name? ');
