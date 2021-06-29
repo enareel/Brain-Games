@@ -24,7 +24,7 @@ const makeProg = (length, index) => {
   const missingValue = prog[index];
 
   // Формируем выражение
-  prog[index] = '...';
+  prog[index] = '..';
   const expression = prog.join(' ');
 
   return {
