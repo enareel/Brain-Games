@@ -38,7 +38,7 @@ const findGCD = (str) => {
  * @returns {Object}
  */
 const gcdGame = () => {
-  // Получаем рандомные числа и оператор
+  // Получаем рандомные числа
   const randA = showRandomNumber(Limit.LEFT, Limit.RIGHT);
   const randB = showRandomNumber(Limit.LEFT + 5, Limit.RIGHT + 10);
 
@@ -54,7 +54,6 @@ const gcdGame = () => {
   return {
     rule,
     answer,
-    value,
     expression,
   };
 };

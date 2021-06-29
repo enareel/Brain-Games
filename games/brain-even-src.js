@@ -35,7 +35,6 @@ const evenGame = () => {
   return {
     rule,
     answer,
-    value: randomNumber,
     expression: randomNumber,
   };
 };

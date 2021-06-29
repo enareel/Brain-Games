@@ -54,7 +54,6 @@ const calcGame = () => {
   return {
     rule,
     answer,
-    value,
     expression,
   };
 };
