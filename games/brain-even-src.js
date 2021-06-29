@@ -27,15 +27,18 @@ const isEven = (num) => !(num % 2) && num > 0;
  */
 const evenGame = () => {
   // Получаем рандомное число
-  const randomNumber = showRandomNumber(Limit.LEFT, Limit.RIGHT);
+  const randNum = showRandomNumber(Limit.LEFT, Limit.RIGHT);
+
+  // Формируем выражение
+  const expression = `${randNum}`;
 
   // Получаем правильный ответ на вопрос
-  const answer = getKeyByValue(answerMap, isEven(randomNumber));
+  const answer = getKeyByValue(answerMap, isEven(randNum));
 
   return {
     rule,
     answer,
-    expression: randomNumber,
+    expression,
   };
 };
 
