@@ -2,7 +2,9 @@
 /**
  * Программа (скрипт) основной игры
  */
-import brainGame from '../games/brain-games-src.js';
+import getName from '../src/cli.js';
 
-// Старт игры
-brainGame();
+// Приветствуем пользователя
+console.log('Welcome to the Brain Games!');
+const userName = getName();
+console.log(`Hello, ${userName}!`);

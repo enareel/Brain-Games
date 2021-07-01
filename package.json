@@ -2,8 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/enareel/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/enareel/frontend-project-lvl1/actions)",
-  "main": "index.js",
+  "description": "«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
