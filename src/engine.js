@@ -21,7 +21,7 @@ const getName = () => readlineSync.question('May I have your name? ');
 /**
  * Функция осуществления игры
  * @param {gameCallback} gameFunc
- * @returns {number}
+ * @returns {undefined}
  */
 const startEngine = (gameFunc) => {
   // Приветствуем пользователя
@@ -32,9 +32,6 @@ const startEngine = (gameFunc) => {
   // Описываем правила игры
   const { rule: ruleMsg } = gameFunc();
   console.log(`${ruleMsg}`);
-
-  // Финальное сообщение
-  let finalMsg = `Congratulations, ${userName}!`;
 
   // Цикл прохода игры
   for (let i = 0; i < timesCount; i += 1) {
@@ -48,14 +45,13 @@ const startEngine = (gameFunc) => {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
-      finalMsg = `Let's try again, ${userName}!`;
-      break;
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
   }
 
   // Выводим финальное сообщение
-  console.log(finalMsg);
-  return finalMsg;
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startEngine;
