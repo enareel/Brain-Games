@@ -16,7 +16,7 @@ const limit = {
  * @param {number} num
  * @returns {boolean}
  */
-const isEven = (num) => !(num % 2) && num > 0;
+const isEven = (num) => num % 2 === 0;
 
 /**
  * Основная функция
