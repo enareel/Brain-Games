@@ -2,8 +2,7 @@
 /**
  * Программа (скрипт) игры "НОД"
  */
-import gcdGame from '../games/brain-gcd-src.js';
-import engine from '../src/engine.js';
+import startGcdGame from '../games/brain-gcd.js';
 
 // Старт игры
-engine(gcdGame);
+startGcdGame();

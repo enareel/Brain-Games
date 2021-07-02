@@ -2,8 +2,7 @@
 /**
  * Программа (скрипт) игры "Калькулятор"
  */
-import calcGame from '../games/brain-calc-src.js';
-import engine from '../src/engine.js';
+import startCalcGame from '../games/brain-calc.js';
 
 // Старт игры
-engine(calcGame);
+startCalcGame();

@@ -1,17 +1,14 @@
 /**
  * Модуль игры "Проверка на чётность"
  */
-import { showRandomNumber, getKeyByValue } from '../src/utils.js';
+import { getRandomNum } from '../src/utils.js';
+import startEngine from '../src/engine.js';
 
 // Вспомогательные переменные
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-const Limit = {
-  LEFT: 5,
-  RIGHT: 25,
-};
-const answerMap = {
-  no: false,
-  yes: true,
+const limit = {
+  MIN: 5,
+  MAX: 25,
 };
 
 /**
@@ -27,13 +24,13 @@ const isEven = (num) => !(num % 2) && num > 0;
  */
 const evenGame = () => {
   // Получаем рандомное число
-  const randNum = showRandomNumber(Limit.LEFT, Limit.RIGHT);
+  const randNum = getRandomNum(limit.MIN, limit.MAX);
 
   // Формируем выражение
   const expression = `${randNum}`;
 
   // Получаем правильный ответ на вопрос
-  const answer = getKeyByValue(answerMap, isEven(randNum));
+  const answer = isEven(randNum) ? 'yes' : 'no';
 
   return {
     rule,
@@ -42,4 +39,10 @@ const evenGame = () => {
   };
 };
 
-export default evenGame;
+/**
+ * Функция запуска игры
+ * @returns {undefined}
+ */
+const startEvenGame = () => startEngine(evenGame);
+
+export default startEvenGame;

@@ -2,8 +2,7 @@
 /**
  * Программа (скрипт) игры "Проверка на чётность"
  */
-import evenGame from '../games/brain-even-src.js';
-import engine from '../src/engine.js';
+import startEvenGame from '../games/brain-even.js';
 
 // Старт игры
-engine(evenGame);
+startEvenGame();

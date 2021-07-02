@@ -3,13 +3,13 @@
  */
 
 /**
- * Функция вывода целого рандомного числа
- * в заданных границах
- * @param {number} a
- * @param {number} b
+ * Функция генерации целого рандомного числа
+ * в заданных инт6ервалах
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
-const showRandomNumber = (a, b) => Math.floor(Math.random() * (b - a + 1) + a);
+const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 /**
  * Функция возврата ключа объекта по значению
@@ -19,4 +19,4 @@ const showRandomNumber = (a, b) => Math.floor(Math.random() * (b - a + 1) + a);
  */
 const getKeyByValue = (obj, value) => Object.keys(obj).find((key) => obj[key] === value);
 
-export { showRandomNumber, getKeyByValue };
+export { getRandomNum, getKeyByValue };

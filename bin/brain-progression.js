@@ -2,8 +2,7 @@
 /**
  * Программа (скрипт) игры "Арифметическая прогрессия"
  */
-import progGame from '../games/brain-progression-src.js';
-import engine from '../src/engine.js';
+import startProgGame from '../games/brain-progression.js';
 
 // Старт игры
-engine(progGame);
+startProgGame();

@@ -1,17 +1,14 @@
 /**
  * Модуль игры "Простое ли число?"
  */
-import { showRandomNumber, getKeyByValue } from '../src/utils.js';
+import { getRandomNum } from '../src/utils.js';
+import startEngine from '../src/engine.js';
 
 // Вспомогательные переменные
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const Limit = {
-  LEFT: 5,
-  RIGHT: 10,
-};
-const answerMap = {
-  no: false,
-  yes: true,
+const limit = {
+  MIN: -3,
+  MAX: 25,
 };
 
 /**
@@ -25,10 +22,10 @@ const isPrime = (num) => {
   }
 
   // Осуществляем расчеты
-  const limit = Math.floor(Math.sqrt(num));
+  const bound = Math.floor(Math.sqrt(num));
 
   // Проверяем на простоту
-  for (let i = 2; i <= limit; i += 1) {
+  for (let i = 2; i <= bound; i += 1) {
     if (!(num % i)) {
       return false;
     }
@@ -42,13 +39,13 @@ const isPrime = (num) => {
  */
 const primeGame = () => {
   // Получаем рандомное число
-  const randNum = showRandomNumber(-Limit.LEFT + 2, Limit.RIGHT);
+  const randNum = getRandomNum(limit.MIN, limit.MAX);
 
   // Формируем выражение
   const expression = `${randNum}`;
 
   // Получаем правильный ответ на вопрос
-  const answer = getKeyByValue(answerMap, isPrime(randNum));
+  const answer = isPrime(randNum) ? 'yes' : 'no';
 
   return {
     rule,
@@ -57,4 +54,10 @@ const primeGame = () => {
   };
 };
 
-export default primeGame;
+/**
+ * Функция запуска игры
+ * @returns {undefined}
+ */
+const startPrimeGame = () => startEngine(primeGame);
+
+export default startPrimeGame;

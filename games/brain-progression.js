@@ -1,13 +1,14 @@
 /**
  * Модуль игры "Арифметическая прогрессия"
  */
-import { showRandomNumber } from '../src/utils.js';
+import { getRandomNum } from '../src/utils.js';
+import startEngine from '../src/engine.js';
 
 // Вспомогательные переменные
 const rule = 'What number is missing in the progression?';
-const Limit = {
-  LEFT: 5,
-  RIGHT: 10,
+const limit = {
+  MIN: 5,
+  MAX: 10,
 };
 
 /**
@@ -18,8 +19,8 @@ const Limit = {
  */
 const makeProg = (length, index) => {
   // Осуществляем расчеты
-  const diff = showRandomNumber(-Limit.LEFT, Limit.RIGHT);
-  const startNumber = showRandomNumber(Limit.LEFT, Limit.RIGHT);
+  const diff = getRandomNum(-limit.MIN, limit.MAX);
+  const startNumber = getRandomNum(limit.MIN, limit.MAX);
   const prog = Array.from(Array(length), (_, i) => startNumber + diff * i);
   const missingValue = prog[index];
 
@@ -39,8 +40,8 @@ const makeProg = (length, index) => {
  */
 const progGame = () => {
   // Получаем рандомные числа: размер прогрессии и положение "скрытого" элемента
-  const length = showRandomNumber(Limit.LEFT, Limit.RIGHT);
-  const missingIndex = showRandomNumber(0, length - 1);
+  const length = getRandomNum(limit.MIN, limit.MAX);
+  const missingIndex = getRandomNum(0, length - 1);
 
   // Получаем выражение и ответ
   const { expression, answer } = makeProg(length, missingIndex);
@@ -52,4 +53,10 @@ const progGame = () => {
   };
 };
 
-export default progGame;
+/**
+ * Функция запуска игры
+ * @returns {undefined}
+ */
+const startProgGame = () => startEngine(progGame);
+
+export default startProgGame;

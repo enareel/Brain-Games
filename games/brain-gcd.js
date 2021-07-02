@@ -1,25 +1,25 @@
 /**
  * Модуль игры "НОД"
  */
-import { showRandomNumber } from '../src/utils.js';
+import { getRandomNum } from '../src/utils.js';
+import startEngine from '../src/engine.js';
 
 // Вспомогательные переменные
 const rule = 'Find the greatest common divisor of given numbers.';
-const Limit = {
-  LEFT: 5,
-  RIGHT: 25,
+const limit = {
+  MIN: 5,
+  MAX: 25,
 };
 
 /**
- * Функция расчета НОД
- * @param {string} str
+ * Функция расчета НОД двух чисел
+ * @param {number} firstNum
+ * @param {number} secondNum
  * @returns {number}
  */
-const findGCD = (str) => {
-  const [firstValue, secondValue] = str.split(' ');
-
+const getGCD = (firstNum, secondNum) => {
   /**
-   * Функция-рекурсия поиска НОД
+   * Функция-рекурсия поиска НОД двух чисел
    * @param {number} a
    * @param {number} b
    * @returns {number}
@@ -30,7 +30,7 @@ const findGCD = (str) => {
     return rem ? iter(min, rem) : min;
   };
 
-  return iter(firstValue, secondValue);
+  return iter(firstNum, secondNum);
 };
 
 /**
@@ -39,14 +39,14 @@ const findGCD = (str) => {
  */
 const gcdGame = () => {
   // Получаем рандомные числа
-  const randA = showRandomNumber(Limit.LEFT, Limit.RIGHT);
-  const randB = showRandomNumber(Limit.LEFT + 5, Limit.RIGHT + 10);
+  const randA = getRandomNum(limit.MIN, limit.MAX);
+  const randB = getRandomNum(limit.MIN, limit.MAX);
 
   // Формируем выражение
   const expression = `${randA} ${randB}`;
 
   // Вычисляем выражение
-  const value = findGCD(expression);
+  const value = getGCD(randA, randB);
 
   // Получаем правильный ответ на вопрос
   const answer = String(value);
@@ -58,4 +58,10 @@ const gcdGame = () => {
   };
 };
 
-export default gcdGame;
+/**
+ * Функция запуска игры
+ * @returns {undefined}
+ */
+const startGcdGame = () => startEngine(gcdGame);
+
+export default startGcdGame;
