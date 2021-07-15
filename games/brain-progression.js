@@ -41,7 +41,7 @@ const getProgGameOptions = () => {
   const answer = String(progression[missingIndex]);
 
   // Формируем выражение
-  progression[missingIndex] = '...';
+  progression[missingIndex] = '..';
   const expression = progression.join(' ');
 
   return {
