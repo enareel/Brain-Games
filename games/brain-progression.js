@@ -38,11 +38,11 @@ const getProgGameOptions = () => {
   const progression = getProg(diff, startNumber, length);
 
   // Получаем правильный ответ на вопрос
-  const answer = progression[missingIndex];
+  const answer = String(progression[missingIndex]);
 
   // Формируем выражение
   progression[missingIndex] = '...';
-  const expression = progression.join('');
+  const expression = progression.join(' ');
 
   return {
     answer,
