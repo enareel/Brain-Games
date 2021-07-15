@@ -8,35 +8,29 @@ const greetingsMsg = 'Welcome to the Brain Games!';
 const timesCount = 3;
 
 /**
- * Функция, которая спрашивает у пользователя имя
- * @returns {string}
- */
-const getName = () => readlineSync.question('May I have your name? ');
-
-/**
- * Функция-коллбэк игры
+ * Функция-коллбэк получения опций игры
  * @callback gameCallback
  */
 
 /**
  * Функция осуществления игры
- * @param {gameCallback} gameFunc
+ * @param {string} ruleMsg
+ * @param {gameCallback} getGameOptions
  * @returns {undefined}
  */
-const startEngine = (gameFunc) => {
+const startEngine = (ruleMsg, getGameOptions) => {
   // Приветствуем пользователя
   console.log(`${greetingsMsg}`);
-  const userName = getName();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
   // Описываем правила игры
-  const { rule: ruleMsg } = gameFunc();
   console.log(`${ruleMsg}`);
 
   // Цикл прохода игры
   for (let i = 0; i < timesCount; i += 1) {
     // Получаем входные данные
-    const { expression: questionExpression, answer: correctAnswer } = gameFunc();
+    const { expression: questionExpression, answer: correctAnswer } = getGameOptions();
     console.log(`Question: ${questionExpression}`);
     const userAnswer = readlineSync.question('Your answer: ');
 

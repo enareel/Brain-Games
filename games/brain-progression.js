@@ -12,42 +12,39 @@ const limit = {
 };
 
 /**
- * Функция расчета арифметической прогрессии
+ * Функция получения арифметической прогрессии
+ * @param {number} diff
+ * @param {number} startNumber
  * @param {number} length
- * @param {number} index
  * @returns {Object}
  */
-const makeProg = (length, index) => {
-  // Осуществляем расчеты
-  const diff = getRandomNum(-limit.MIN, limit.MAX);
-  const startNumber = getRandomNum(limit.MIN, limit.MAX);
+const getProg = (diff, startNumber, length) => {
   const prog = Array.from(Array(length), (_, i) => startNumber + diff * i);
-  const missingValue = prog[index];
-
-  // Формируем выражение
-  prog[index] = '..';
-  const expression = prog.join(' ');
-
-  return {
-    expression,
-    answer: String(missingValue),
-  };
+  return prog;
 };
 
 /**
  * Основная функция
  * @returns {Object}
  */
-const progGame = () => {
-  // Получаем рандомные числа: размер прогрессии и положение "скрытого" элемента
+const getProgGameOptions = () => {
+  // Получаем числа: размер прогрессии, начальное число, разницу и положение "скрытого" элемента
   const length = getRandomNum(limit.MIN, limit.MAX);
+  const diff = getRandomNum(-limit.MIN, limit.MAX);
+  const startNumber = getRandomNum(limit.MIN, limit.MAX);
   const missingIndex = getRandomNum(0, length - 1);
 
-  // Получаем выражение и ответ
-  const { expression, answer } = makeProg(length, missingIndex);
+  // Получаем прогрессию
+  const progression = getProg(diff, startNumber, length);
+
+  // Получаем правильный ответ на вопрос
+  const answer = progression[missingIndex];
+
+  // Формируем выражение
+  progression[missingIndex] = '...';
+  const expression = progression.join('');
 
   return {
-    rule,
     answer,
     expression,
   };
@@ -57,6 +54,6 @@ const progGame = () => {
  * Функция запуска игры
  * @returns {undefined}
  */
-const startProgGame = () => startEngine(progGame);
+const startProgGame = () => startEngine(rule, getProgGameOptions);
 
 export default startProgGame;

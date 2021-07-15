@@ -22,7 +22,7 @@ const isEven = (num) => num % 2 === 0;
  * Основная функция
  * @returns {Object}
  */
-const evenGame = () => {
+const getEvenGameOptions = () => {
   // Получаем рандомное число
   const randNum = getRandomNum(limit.MIN, limit.MAX);
 
@@ -33,7 +33,6 @@ const evenGame = () => {
   const answer = isEven(randNum) ? 'yes' : 'no';
 
   return {
-    rule,
     answer,
     expression,
   };
@@ -43,6 +42,6 @@ const evenGame = () => {
  * Функция запуска игры
  * @returns {undefined}
  */
-const startEvenGame = () => startEngine(evenGame);
+const startEvenGame = () => startEngine(rule, getEvenGameOptions);
 
 export default startEvenGame;

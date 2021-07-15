@@ -41,7 +41,7 @@ const calculateExpr = (firstNum, secondNum, oper) => {
  * Основная функция
  * @returns {Object}
  */
-const calcGame = () => {
+const getCalcGameOptions = () => {
   // Получаем рандомные числа и оператор
   const randA = getRandomNum(limit.MIN, limit.MAX);
   const randB = getRandomNum(limit.MIN, limit.MAX);
@@ -57,7 +57,6 @@ const calcGame = () => {
   const answer = String(value);
 
   return {
-    rule,
     answer,
     expression,
   };
@@ -67,6 +66,6 @@ const calcGame = () => {
  * Функция запуска игры
  * @returns {undefined}
  */
-const startCalcGame = () => startEngine(calcGame);
+const startCalcGame = () => startEngine(rule, getCalcGameOptions);
 
 export default startCalcGame;

@@ -37,7 +37,7 @@ const getGCD = (firstNum, secondNum) => {
  * Основная функция
  * @returns {Object}
  */
-const gcdGame = () => {
+const getGcdGameOptions = () => {
   // Получаем рандомные числа
   const randA = getRandomNum(limit.MIN, limit.MAX);
   const randB = getRandomNum(limit.MIN, limit.MAX);
@@ -52,7 +52,6 @@ const gcdGame = () => {
   const answer = String(value);
 
   return {
-    rule,
     answer,
     expression,
   };
@@ -62,6 +61,6 @@ const gcdGame = () => {
  * Функция запуска игры
  * @returns {undefined}
  */
-const startGcdGame = () => startEngine(gcdGame);
+const startGcdGame = () => startEngine(rule, getGcdGameOptions);
 
 export default startGcdGame;

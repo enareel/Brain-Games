@@ -1,12 +1,18 @@
 /**
- * Модуль, который получает имя пользователя
+ * Модуль основной игры
  */
 import readlineSync from 'readline-sync';
 
 /**
  * Функция, которая спрашивает у пользователя имя
- * @returns {string}
+ * и приветствует его
+ * @returns {undefined}
  */
-const getName = () => readlineSync.question('May I have your name? ');
+const startMainGame = () => {
+  // Приветствуем пользователя
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+};
 
-export default getName;
+export default startMainGame;

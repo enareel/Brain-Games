@@ -37,7 +37,7 @@ const isPrime = (num) => {
  * Основная функция
  * @returns {Object}
  */
-const primeGame = () => {
+const getPrimeGameOptions = () => {
   // Получаем рандомное число
   const randNum = getRandomNum(limit.MIN, limit.MAX);
 
@@ -48,7 +48,6 @@ const primeGame = () => {
   const answer = isPrime(randNum) ? 'yes' : 'no';
 
   return {
-    rule,
     answer,
     expression,
   };
@@ -58,6 +57,6 @@ const primeGame = () => {
  * Функция запуска игры
  * @returns {undefined}
  */
-const startPrimeGame = () => startEngine(primeGame);
+const startPrimeGame = () => startEngine(rule, getPrimeGameOptions);
 
 export default startPrimeGame;
