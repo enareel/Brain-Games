@@ -1,8 +1,8 @@
 /**
  * Модуль игры "Простое ли число?"
  */
-import { getRandomNum } from '../src/utils.js';
-import startEngine from '../src/engine.js';
+import { getRandomNum } from './utils.js';
+import startEngine from './engine.js';
 
 // Вспомогательные переменные
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
