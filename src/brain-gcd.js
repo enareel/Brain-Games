@@ -1,8 +1,8 @@
 /**
  * Модуль игры "НОД"
  */
-import { getRandomNum } from '../src/utils.js';
-import startEngine from '../src/engine.js';
+import { getRandomNum } from './utils.js';
+import startEngine from './engine.js';
 
 // Вспомогательные переменные
 const rule = 'Find the greatest common divisor of given numbers.';

@@ -1,8 +1,8 @@
 /**
  * Модуль игры "Проверка на чётность"
  */
-import { getRandomNum } from '../src/utils.js';
-import startEngine from '../src/engine.js';
+import { getRandomNum } from './utils.js';
+import startEngine from './engine.js';
 
 // Вспомогательные переменные
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';

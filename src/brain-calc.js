@@ -1,8 +1,8 @@
 /**
  * Модуль игры "Калькулятор"
  */
-import { getRandomNum } from '../src/utils.js';
-import startEngine from '../src/engine.js';
+import { getRandomNum } from './utils.js';
+import startEngine from './engine.js';
 
 // Вспомогательные переменные
 const rule = 'What is the result of the expression?';

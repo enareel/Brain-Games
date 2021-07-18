@@ -2,7 +2,7 @@
 /**
  * Программа (скрипт) игры "Простое ли число?"
  */
-import startPrimeGame from '../games/brain-prime.js';
+import startPrimeGame from '../src/brain-prime.js';
 
 // Старт игры
 startPrimeGame();

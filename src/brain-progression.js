@@ -1,8 +1,8 @@
 /**
  * Модуль игры "Арифметическая прогрессия"
  */
-import { getRandomNum } from '../src/utils.js';
-import startEngine from '../src/engine.js';
+import { getRandomNum } from './utils.js';
+import startEngine from './engine.js';
 
 // Вспомогательные переменные
 const rule = 'What number is missing in the progression?';
@@ -13,14 +13,26 @@ const limit = {
 
 /**
  * Функция получения арифметической прогрессии
- * @param {number} diff
+ * @param {number} step
  * @param {number} startNumber
  * @param {number} length
  * @returns {Object}
  */
-const getProg = (diff, startNumber, length) => {
-  const prog = Array.from(Array(length), (_, i) => startNumber + diff * i);
+const getProg = (step, startNumber, length) => {
+  const prog = Array.from(Array(length), (_, i) => startNumber + step * i);
   return prog;
+};
+
+/**
+ * Функция формирования выражения на основе прогрессии
+ * и индекса "спрятанного" элемента
+ * @param {Array} prog
+ * @param {number} index
+ */
+const makeExpression = (prog, index) => {
+  const progression = prog;
+  progression[index] = '..';
+  return progression.join(' ');
 };
 
 /**
@@ -41,8 +53,7 @@ const getProgGameOptions = () => {
   const answer = String(progression[missingIndex]);
 
   // Формируем выражение
-  progression[missingIndex] = '..';
-  const expression = progression.join(' ');
+  const expression = makeExpression(progression, missingIndex);
 
   return {
     answer,

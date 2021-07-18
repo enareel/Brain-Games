@@ -2,7 +2,7 @@
 /**
  * Программа (скрипт) игры "Проверка на чётность"
  */
-import startEvenGame from '../games/brain-even.js';
+import startEvenGame from '../src/brain-even.js';
 
 // Старт игры
 startEvenGame();
