@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="180" src="https://github.com/enareel/frontend-project-lvl1/logo.svg" alt="Логотип">
+  <img width="180" src="https://github.com/enareel/frontend-project-lvl1/blob/main/logo.svg" alt="Логотип">
 </p>
 # 🧠 Игры разума
 
