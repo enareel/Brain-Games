@@ -1,5 +1,5 @@
 <p align="center">
-  <span style="font-size: 3rem; margin: 0; padding: 0;">🧠</span>
+  <span size="30px">🧠</span>
   <h1 style="border: none;">Игры разума</h1>
 </p>
 <p align="center">
