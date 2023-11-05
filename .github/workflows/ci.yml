@@ -1,4 +1,4 @@
-name: React Check
+name: Project Check
 # Events
 on:
   push:
