@@ -1,4 +1,4 @@
-<header style="display: flex; flex-direction: column; align-items: center; margin: 0;">
+<center><header style="display: flex; flex-direction: column; align-items: center; margin: 0;">
   <div style="display: grid; grid-template-columns: 1fr; justify-items: center; margin: 0; padding: 5px 15px; text-decoration: none;">
     <span style="font-size: 3rem; margin: 0; padding: 0;">🧠</span>
     <h1 style="border: none;">Игры разума</h1>
@@ -10,7 +10,7 @@
 " style="border-radius: 5px;"></a>
     <a href="https://opensource.org/licenses/MIT"><img alt="GitHub license" src="https://img.shields.io/github/license/enareel/frontend-project-lvl1?style=for-the-badge&logo=" style="border-radius: 5px;"></a>
   </div>
-</header>
+</header></center>
 
 ## Навигация
 
@@ -43,7 +43,7 @@
 </a>
 <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" style="border-radius: 5px;">
 </a>
-    <a href="https://github.com/tj/commander.js"><img alt="Commander.js" src="https://img.shields.io/badge/commander.js-js?style=for-the-badge&logo=slashdot&logoColor=white&color=%23181818&link=https%3A%2F%2Fgithub.com%2Ftopics%2Fjavascript
+    <a href="https://github.com/tj/commander.js"><img alt="Commander.js" src="https://img.shields.io/badge/Commander.js-181818?style=for-the-badge&logo=slashdot&logoColor=white
 " style="border-radius: 5px;"></a>
     <a href="https://docs.github.com/ru/actions"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" style="border-radius: 5px;"></a>
   </div>
