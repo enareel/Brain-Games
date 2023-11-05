@@ -1,4 +1,4 @@
-<center><header style="display: flex; flex-direction: column; align-items: center; margin: 0;">
+<p align="center"><header style="display: flex; flex-direction: column; align-items: center; margin: 0;">
   <div style="display: grid; grid-template-columns: 1fr; justify-items: center; margin: 0; padding: 5px 15px; text-decoration: none;">
     <span style="font-size: 3rem; margin: 0; padding: 0;">🧠</span>
     <h1 style="border: none;">Игры разума</h1>
@@ -10,7 +10,7 @@
 " style="border-radius: 5px;"></a>
     <a href="https://opensource.org/licenses/MIT"><img alt="GitHub license" src="https://img.shields.io/github/license/enareel/frontend-project-lvl1?style=for-the-badge&logo=" style="border-radius: 5px;"></a>
   </div>
-</header></center>
+</header></p>
 
 ## Навигация
 
