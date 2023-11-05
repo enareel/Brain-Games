@@ -1,4 +1,6 @@
 <p align="center"><font size="1">🧠 Игры разума</font></p>
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
 <p align="center">
   <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="Hexlet CI" src="https://img.shields.io/github/actions/workflow/status/enareel/frontend-project-lvl1/hexlet-check.yml?style=for-the-badge&logo=github&label=Hexlet%20CI" style="border-radius: 5px;"></a>
   <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/project-check.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/enareel/frontend-project-lvl1/hexlet-check.yml?style=for-the-badge&logo=github&label=CI" style="border-radius: 5px;"></a>
