@@ -83,7 +83,7 @@
 
 ### Пример игры
 
-```javascript
+```bash
 $ brain-progression
 Welcome to the Brain Game!
 What number is missing in this progression?
@@ -168,28 +168,34 @@ Congratulations, Roman!
 
 ```bash
 .
-├── bin
-│   ├── brain-calc.js
-│   ├── brain-even.js
-│   ├── brain-games.js
-│   ├── brain-gcd.js
-│   ├── brain-prime.js
-│   └── brain-progression.js
-├── src
-│   ├── brain-calc.js
-│   ├── brain-even.js
-│   ├── brain-games.js
-│   ├── brain-gcd.js
-│   ├── brain-progression.js
-│   ├── brain-cli.js
-│   ├── brain-engine.js
-│   └── utils.js
 ├── .eslintrc.yml
+├── .github
+│   └── workflows
+│       ├── README.md
+│       ├── ci.yml
+│       └── hexlet-check.yml
 ├── .gitignore
 ├── Makefile
+├── README.md
+├── bin
+│   ├── brain-calc.js
+│   ├── brain-even.js
+│   ├── brain-games.js
+│   ├── brain-gcd.js
+│   ├── brain-prime.js
+│   └── brain-progression.js
+├── logo.svg
 ├── package-lock.json
 ├── package.json
-└── README.md
+└── src
+    ├── brain-calc.js
+    ├── brain-even.js
+    ├── brain-gcd.js
+    ├── brain-prime.js
+    ├── brain-progression.js
+    ├── cli.js
+    ├── engine.js
+    └── utils.js
 ```
 
 ## Дополнительные команды
