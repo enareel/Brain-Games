@@ -38,8 +38,8 @@
 <p align="center">
   <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" style="border-radius: 5px;"></a>
   <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" style="border-radius: 5px;"></a>
-  <a href="https://github.com/tj/commander.js"><img alt="Readline Sync" src="https://img.shields.io/badge/ReadlineSync-181818?style=for-the-badge&logo=slashdot&logoColor=white" style="border-radius: 5px;"></a>
-  <a href="https://github.com/tj/commander.js"><img alt="ESLint" src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" style="border-radius: 5px;"></a>
+  <a href="https://github.com/anseki/readline-sync"><img alt="Readline Sync" src="https://img.shields.io/badge/ReadlineSync-181818?style=for-the-badge&logo=slashdot&logoColor=white" style="border-radius: 5px;"></a>
+  <a href="https://github.com/eslint/eslint"><img alt="ESLint" src="https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white" style="border-radius: 5px;"></a>
   <a href="https://docs.github.com/ru/actions"><img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" style="border-radius: 5px;"></a>
 </p>
 
