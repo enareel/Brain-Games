@@ -1,14 +1,14 @@
 <p align="center">
-  <img width="150" src="https://github.com/enareel/frontend-project-lvl1/blob/main/logo.svg" alt="Логотип">
+  <img width="150" src="https://github.com/enareel/brain-games/blob/main/logo.svg" alt="Логотип">
 </p>
 
 # Игры разума
 
 <p align="center">
-  <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="Hexlet CI" src="https://img.shields.io/github/actions/workflow/status/enareel/frontend-project-lvl1/hexlet-check.yml?style=for-the-badge&logo=github&label=Hexlet%20CI" style="border-radius: 5px;"></a>
-  <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/project-check.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/enareel/frontend-project-lvl1/hexlet-check.yml?style=for-the-badge&logo=github&label=CI" style="border-radius: 5px;"></a>
-  <a href="https://codeclimate.com/github/enareel/frontend-project-lvl1/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/enareel/frontend-project-lvl1?style=for-the-badge&logo=codeclimate" style="border-radius: 5px;"></a>
-  <a href="https://opensource.org/licenses/MIT"><img alt="GitHub license" src="https://img.shields.io/github/license/enareel/frontend-project-lvl1?style=for-the-badge" style="border-radius: 5px;"></a>
+  <a href="https://github.com/enareel/brain-games/actions/workflows/hexlet-check.yml"><img alt="Hexlet CI" src="https://img.shields.io/github/actions/workflow/status/enareel/brain-games/hexlet-check.yml?style=for-the-badge&logo=github&label=Hexlet%20CI" style="border-radius: 5px;"></a>
+  <a href="https://github.com/enareel/brain-games/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/enareel/brain-games/ci.yml?style=for-the-badge&logo=github&label=CI" style="border-radius: 5px;"></a>
+  <a href="https://codeclimate.com/github/enareel/brain-games/maintainability"><img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/enareel/brain-games?style=for-the-badge&logo=codeclimate" style="border-radius: 5px;"></a>
+  <a href="https://opensource.org/licenses/MIT"><img alt="GitHub license" src="https://img.shields.io/github/license/enareel/brain-games?style=for-the-badge" style="border-radius: 5px;"></a>
 </p>
 
 ## Навигация
