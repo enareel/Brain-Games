@@ -1,4 +1,4 @@
-<p align="center"><font size="1">🧠 Игры разума</font></p>
+<p align="center"><font size="15">🧠 Игры разума</font></p>
 > [!IMPORTANT]
 > Crucial information necessary for users to succeed.
 <p align="center">
