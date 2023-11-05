@@ -1,8 +1,4 @@
-<p align="center">
-  <h1>🧠</h1>
-  <h1 style="border: none;">Игры разума</h1>
-</p>
-
+<p align="center">🧠 Игры разума</p>
 <p style="text-align: center;">A piece of centered text</p>
 <p align="center">
   <a href="https://github.com/enareel/frontend-project-lvl1/actions/workflows/hexlet-check.yml"><img alt="Hexlet CI" src="https://img.shields.io/github/actions/workflow/status/enareel/frontend-project-lvl1/hexlet-check.yml?style=for-the-badge&logo=github&label=Hexlet%20CI" style="border-radius: 5px;"></a>
