@@ -33,7 +33,7 @@
 
 ## Используемые технологии
 
-Языки программирования, библиотеки, фреймворки и т.д., используемые в проекте.
+Языки программирования, библиотеки, фреймворки и т.д., используемые в проекте:
 
 <p align="center">
   <a href="https://github.com/topics/javascript"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" style="border-radius: 5px;"></a>
